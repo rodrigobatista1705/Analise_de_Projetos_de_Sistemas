@@ -1,43 +1,50 @@
+from random import randint
 #Login
 materiais = [
-    "1 " " Caneta"
-    "2 " " Regua"
-    "3 " " Lapis"
-    "4 " " Borracha"
-    "5 " " Calculadora"
-    "6 " " Conteudos"
+    {"Mat": " Caneta", "tempo": randint(2, 15)},
+    {"Mat": " Regua", "tempo": randint(2, 15)},
+    {"Mat": " Lapis", "tempo": randint(2, 15)},
+    {"Mat": " Borracha", "tempo": randint(2, 15)},
+    {"Mat": " Calculadora", "tempo": randint(2, 15)},
+    {"Mat": " Conteudos", "tempo": randint(2, 15)},
 ]
-while True:
-    print("\nDigite \n 1 Pedir material\n 2 Cadastrar(Login)\n")
-    inicial = int(input())
-    if inicial == 2:
-        nome = input("Nome: ")
-        email = input("E-mail: ")
-        senha = input("Senha: ")
-        continue
-    elif inicial == 1:
-        print(nome)
-        verificação= input("senha: ")
-        if verificação == senha:
-            print(materiais)   
-            cm = int(input("Material que deseja: "))    
-            if cm == 1:
-                print("Você pode usar esse material por 5 dias")
-                break
-            elif cm == 2:
-                print("Você pode usar esse material por 3 dias")
-                break
-            elif cm == 3:
-                print("Você pode usar esse material por 4 dias")
-                break
-            elif cm == 4:
-                print("Você pode usar esse material por 14 dias")
-                break
-            elif cm == 5:
-                print("Você pode usar esse material por 3 dias")
-                break
-            else:
-                print("Você pode usar esse material por 1 dias")
-                break
+print("\nFazer Login")
+nome = input("Nome: ")
+email = input("E-mail: ")
+senha = input("Senha: ")
+    
 
+print(f"\nOlá {nome}")
+verificação= input("senha: ")
+if verificação == senha:
+    escolha = int(input('Emprestar para alguem(1)  |  Pegar emprestado(2)\n'))
+    if escolha == 2:
+        for i, mats in enumerate(materiais, start=1):
+            print(f"\n{i}  {mats['Mat']}  por {mats["tempo"]} dias")
+            print("  "+ "-" *40)   
+        opc2 = input("\nDeseja escolher um desses materiais? (s/n)").lower()
+        if opc2 == "s":
+            print("\n+++ Busca por Material +++")
+            busca = input("Digite o nome do material: ").lower()
+            encontrado = False
+            for mats in materiais:
+                if busca in mats["Mat"].lower():
+                    print(f'Aproveite seu {mats["Mat"]} por {mats["tempo"]} dias')
+                    encontrado = True
+            if not encontrado:
+                print ("Nenhum material com esse nome.")
+    else:
+        Material = input("Material que vai emprestar: ")
+        Tempo = int(input("Tempo: "))
+
+
+        material_novo = {
+            "Mat": Material,
+            "tempo": Tempo,
+        }
+        materiais.append(material_novo)
+        print("\nMaterial novo adicionado")
+        for i, mats in enumerate(materiais, start=1):
+            print(f"\n{i}  {mats['Mat']}  por {mats["tempo"]} dias")
+            print("  "+ "-" *40)   
 
