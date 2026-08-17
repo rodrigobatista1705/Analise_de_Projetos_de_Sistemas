@@ -20,24 +20,24 @@
 
 | Elipse no diagrama | Veio do requisito | Que veio da fala |
 |---|---|---|
-| | RF01 | "..." |
-| | RF02 | "..." |
+| | RF01 | "Quando o aluno escolhe o livro, que esta em uso, ele fica reservado para quando for devolvido ele poder usar" |
+| | RF02 | "O aluno deve conseguir buscar um livro que deseja, para efetuar a reserva" |
 
 <!-- Nível A: conte o caminho completo de cada funcionalidade,
      da fala do cliente até o que está desenhado no diagrama. -->
 
 ## Relacionamento entre casos de uso (nível A)
 
-- Tipo: «include» ou «extend»
-- Entre: ______ e ______
-- Por que é esse e não o outro: ____________________
+- Tipo: «extend» 
+- Entre: Reservar livro e consultar catalogo
+- Por que é esse e não o outro: Porque para reservar um livro nao eh necessario a execucao do consultar catalogo, para entao a reserva ser realizada. Ou seja uma reserva pode ser feita feita sem consulta para o fluxo funcionar
 
 ## Autoavaliação
 
-**Conceito pretendido:** ___ (A / B / C)
+**Conceito pretendido:** B (A / B / C)
 
-- Conversei sobre esta atividade com: ______ (ou "ninguém")
-- Esteira da análise: ______ (diga onde)
-- Diagrama e notação: ______
-- Rastreabilidade: ______
-- Organização da entrega: ______
+- Conversei sobre esta atividade com: ninguém
+- Esteira da análise: B
+- Diagrama e notação: B
+- Rastreabilidade: B
+- Organização da entrega: B
