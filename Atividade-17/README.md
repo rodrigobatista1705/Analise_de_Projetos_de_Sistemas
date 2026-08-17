@@ -9,12 +9,12 @@
 | Arquivo | O que é |
 |---|---|
 | [esteira-da-analise.md](esteira-da-analise.md) | As esteiras e a autoavaliação |
-| [diagrama-casos-de-uso.png](diagrama-casos-de-uso.png) | O diagrama (imagem) |
-| [diagrama-casos-de-uso.drawio](diagrama-casos-de-uso.drawio) | O diagrama (arquivo editável) |
+| [diagrama-casos-de-uso.png](Atividade-17/diagrama_caso_de_uso.png) | O diagrama (imagem) |
+| [diagrama-casos-de-uso.drawio](Atividade-17/diagrama-caso-de-uso.drawio) | O diagrama (arquivo editável) |
 
 ## Diagrama
 
-![Diagrama de Casos de Uso do BiblioTech](diagrama-casos-de-uso.png)
+![Diagrama de Casos de Uso do BiblioTech](Atividade-17/diagrama_caso_de_uso.png)
 
 ## Conceito pretendido
 
